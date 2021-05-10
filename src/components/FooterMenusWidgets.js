@@ -57,43 +57,6 @@ const FooterMenusWidgets = ({}) => {
                 </div>
               </div>
             </div>
-
-            <div className="footer-widgets column-two grid-item">
-              <div className="widget widget_text">
-                <div className="widget-content">
-                  <h2 className="widget-title subheading heading-size-3">
-                    Find Us
-                  </h2>
-                  <div className="textwidget">
-                    <p>
-                      <strong>NeverNull GmbH</strong>
-                      <br />
-                      <a
-                        href="https://www.nevernull.io"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        www.nevernull.io
-                      </a>
-                    </p>
-                    <p>
-                      <strong>We do a lot of things</strong>
-                      <br />
-                      Besides web-development, we also develop
-                      <br />
-                      the cross platform app framework{" "}
-                      <a
-                        href="https://www.mobileui.dev"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        www.mobileui.dev
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </aside>
       </div>

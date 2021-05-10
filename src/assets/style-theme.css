@@ -1,4 +1,9 @@
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 #GatsbyBody.backdrop {
   position: fixed;
   width: 100%;
@@ -113,4 +118,13 @@ article .entry-title{
 }
 .single  article .entry-title{
   font-size: 36px;
+}
+.d-none{
+  display: none !important;
+}
+
+.logo {
+  max-width: 640px;
+  display: inline-block;
+  padding: 15px 0;
 }

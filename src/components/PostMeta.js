@@ -32,7 +32,7 @@ const PostMeta = ({ author, title, date }) => {
           </span>
           <span className="meta-text">{date}</span>
         </li>
-        <li className="post-comment-link meta-wrapper">
+        <li className="post-comment-link meta-wrapper d-none">
           <span className="meta-icon">
             <CommentIcon />
           </span>
