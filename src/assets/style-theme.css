@@ -20,7 +20,7 @@ body:not(.overlay-header) .primary-menu > li > .icon,
 .archive-header a,
 .header-footer-group .color-accent,
 .header-footer-group .color-accent-hover:hover {
-  color: #cd2653;
+  color: #6a79a2;
 }
 
 .site-description,
@@ -38,4 +38,79 @@ body:not(.overlay-header) .primary-menu > li > .icon,
 .singular .entry-header .post-meta,
 .singular:not(.overlay-header) .entry-header .post-meta a {
   color: #6d6d6d;
+}
+
+article .entry-title{
+   font-weight: 200;
+    font-size: 26px;
+    line-height: 110%!important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #505050;
+    display: inline-block;
+    margin: 20px 0;
+}
+.content-left{
+  width: 70%;
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sidebar{
+  width: 30%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.post-separator{
+  display: none !important;
+}
+.content-left article.post {
+  width: 45%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.pagination .nav-links a{
+  font-size: 14px;
+  text-align: center;
+  color: #6a79a2!important;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  text-align: center;
+  margin: 0 10px;
+}
+.pagination .nav-links a:hover{
+  text-decoration: none;
+}
+.pagination .nav-links .page-numbers{
+  font-size: 14px;
+  border-radius: 25px;
+  margin: 0 10px;
+  display: inline-block;
+  border: 1px solid #ededed;
+}
+.pagination .nav-links a:not(.page-numbers){
+  display: block;
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+}
+.pagination .nav-links span.page-numbers{
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  line-height: 34px;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  background: #6a79a2;
+}
+
+.single .content-left article.post{
+  width: 100%;
+}
+.single  article .entry-title{
+  font-size: 36px;
 }

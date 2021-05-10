@@ -18,8 +18,10 @@ const page = ({ data }) => {
         className={`post-${databaseId} post page type-page status-publish hentry`}
         id={`post-${databaseId}`}
       >
-        <header className="entry-header has-text-align-center header-footer-group">
-          <div className="entry-header-inner section-inner medium">
+        <FeaturedMedia image={featuredImage} />
+        
+        <header className="entry-header">
+          <div className="entry-header-content">
             <h1
               className="entry-title"
               dangerouslySetInnerHTML={{ __html: title }}
@@ -27,7 +29,7 @@ const page = ({ data }) => {
           </div>
         </header>
 
-        <FeaturedMedia image={featuredImage} />
+        
 
         <div className="post-inner thin">
           <div

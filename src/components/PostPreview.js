@@ -11,8 +11,10 @@ const PostPreview = ({ post, isLast }) => {
         className={`post-${post.databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
         id={`post-${post.databaseId}`}
       >
-        <header className="entry-header has-text-align-center">
-          <div className="entry-header-inner section-inner medium">
+         <FeaturedMedia image={post.featuredImage} />
+
+        <header className="entry-header">
+          <div className="entry-header-content">
             <PostCategories categories={post.categories} />
 
             <h2 className="entry-title heading-size-1">
@@ -22,21 +24,22 @@ const PostPreview = ({ post, isLast }) => {
               />
             </h2>
 
-            <PostMeta
-              title={post.title}
-              author={post.author}
-              date={post.date}
-            />
+            
           </div>
         </header>
 
-        <FeaturedMedia image={post.featuredImage} />
+       
 
         <div className="post-inner thin ">
           <div className="entry-content">
             <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
           </div>
         </div>
+        <PostMeta
+            title={post.title}
+            author={post.author}
+            date={post.date}
+          />
       </article>
 
       {!isLast && (
