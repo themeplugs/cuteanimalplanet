@@ -911,25 +911,6 @@ section {
   width: 100%;
 }
 
-.section-inner {
-  max-width: 120rem;
-}
-
-.section-inner.max-percentage {
-  width: 100%;
-}
-
-.section-inner.thin {
-  max-width: 58rem;
-}
-
-.section-inner.small {
-  max-width: 80rem;
-}
-
-.section-inner.medium {
-  max-width: 100rem;
-}
 
 .section-inner.no-margin {
   margin: 0;
@@ -2498,8 +2479,6 @@ h2.entry-title {
 
 .singular .featured-media-inner {
   position: relative;
-  left: calc(50% - 50vw);
-  width: 100vw;
 }
 
 .singular .featured-media::before {

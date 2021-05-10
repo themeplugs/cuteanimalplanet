@@ -8,7 +8,7 @@ const FeaturedMedia = ({ image }) => {
 
   return (
     <div className="featured-media">
-      <div className="featured-media-inner section-inner has-text-align-center">
+      <div className="featured-media-inner">
         <GatsbyImage alt={image.node.altText} image={imageData}
                      className="attachment-post-thumbnail size-post-thumbnail wp-post-image"
         />
