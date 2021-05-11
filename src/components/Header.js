@@ -3,7 +3,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Menu from "./Menu"
 import SiteLogo from "../assets/images/logo.jpg"
 
-const Header = ({ pageContext, toggleBackdrop, ...props }) => {
+const HeaderCopy = ({ pageContext, toggleBackdrop, ...props }) => {
   const { wp } = useStaticQuery(graphql`
     {
       wp {
@@ -34,6 +34,7 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
             <div className="row">
                <div className="col-lg-12">
                   <div className="main-menu header-navigation-wrapper">
+                 
                     <Menu />
                   </div>
                </div>
@@ -44,4 +45,4 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
   )
 }
 
-export default Header
+export default HeaderCopy

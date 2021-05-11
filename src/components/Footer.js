@@ -1,4 +1,5 @@
 import React from "react"
+import FooterNav from "./FooterNav"
 import { Link } from "gatsby"
 
 const Footer = ({}) => {
@@ -13,12 +14,7 @@ const Footer = ({}) => {
               </p>
             </div>  
           <div className="fmenu">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
+              <FooterNav />
             </div>
         </div>
         

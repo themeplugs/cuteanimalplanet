@@ -2,10 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import UniversalLink from "./UniversalLink"
 
-const Menu = () => {
+const FooterNav = () => {
   const { wpMenu } = useStaticQuery(graphql`
     {
-      wpMenu(slug: { eq: "primary" }) {
+      wpMenu(slug: { eq: "footer" }) {
         name
         menuItems {
           nodes {
@@ -28,12 +28,7 @@ const Menu = () => {
   if (!wpMenu?.menuItems?.nodes || wpMenu.menuItems.nodes === 0) return null
 
   return (
-    <nav
-      className="primary-menu-wrapper"
-      aria-label="Horizontal"
-      role="navigation"
-    >
-      <ul className="primary-menu reset-list-style">
+    <ul>
         {wpMenu.menuItems.nodes.map((menuItem, i) => {
           const path = menuItem?.connectedNode?.node?.uri ?? menuItem.url
 
@@ -54,13 +49,11 @@ const Menu = () => {
               >
                 {menuItem.label}
               </UniversalLink>
-             
             </li>
           )
         })}
-      </ul>
-    </nav>
+    </ul>
   )
 }
 
-export default Menu
+export default FooterNav
