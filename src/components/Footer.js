@@ -3,27 +3,29 @@ import { Link } from "gatsby"
 
 const Footer = ({}) => {
   return (
-    <footer id="site-footer" role="contentinfo" className="header-footer-group">
-      <div className="section-inner">
-        <div className="footer-credits">
-          <p className="footer-copyright">
-            © {new Date().getFullYear()}{" "}
-            <Link to={"/"}>Gatsby Starter WordPress Twenty Twenty</Link>
-          </p>
-          <p>
-            <a
-              className="powered-by-wordpress"
-              href="https://www.henrikwirth.com"
-              rel="noreferrer noopener"
-            >
-              Proudly presented by Henrik Wirth
-            </a>
-          </p>
+    <footer className="copyright-sec">
+      <div className="container">
+        <div className="footer-row d-flex align-items-center justify-content-between">
+          <div className="footer-credits">
+              <p className="footer-copyright">
+                Copyright &copy; {new Date().getFullYear()}{" "}
+                <Link to={"/"}>Cute Animal Planet. All Rights Reserved.</Link>
+              </p>
+            </div>  
+          <div className="fmenu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
         </div>
+        
 
         <a className="to-the-top" href="#site-header">
           <span className="to-the-top-long">
-            To the top{" "}
+            Up{" "}
             <span className="arrow" aria-hidden="true">
               ↑
             </span>
@@ -34,7 +36,8 @@ const Footer = ({}) => {
               ↑
             </span>
           </span>
-        </a>
+        </a>      
+
       </div>
     </footer>
   )

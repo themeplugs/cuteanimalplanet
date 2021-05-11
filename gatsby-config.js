@@ -31,7 +31,7 @@ module.exports = {
         url: `http://themeplugs.com/plugin/graphql`,
         verbose: true,
         develop: {
-          hardCacheMediaFiles: true,
+          hardCacheMediaFiles: false,
         },
         debug: {
           graphql: {

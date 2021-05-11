@@ -9,56 +9,41 @@ const FooterMenusWidgets = ({}) => {
           <SocialMenu />
         </div>
 
-        <aside className="footer-widgets-outer-wrapper" role="complementary">
-          <div className="footer-widgets-wrapper">
-            <div className="footer-widgets column-one grid-item">
-              <div className="widget widget_text">
-                <div className="widget-content">
-                  <h2 className="widget-title subheading heading-size-3">
-                    About This Site
-                  </h2>
-                  <div className="textwidget">
-                    <p>
-                      This is a port from the php-based WordPress Twenty Twenty
-                      theme to a Gatsby theme. It works uses the new{" "}
-                      <a
-                        href="https://github.com/TylerBarnes/using-gatsby-source-wordpress-experimental"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        gatsby-wordpress-source plugin
-                      </a>{" "}
-                      that has been developed by{" "}
-                      <a
-                        href={"https://github.com/TylerBarnes"}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        @TylerBarnes
-                      </a>
-                    </p>
-
-                    <p>
-                      Furthermore, I am using this site for a thesis, which
-                      compares overall performance between a php-based WordPress
-                      theme and a static Gatsby site. I'll publish it on my site
-                      once it is done:{" "}
-                      <a
-                        href="https://www.henrikwirth.com"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        title="www.henrikwirth.com"
-                      >
-                        henrikwirth.com
-                      </a>
-                      .
-                    </p>
-                  </div>
+        <div className="footer-sec">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 footer-col">
+                <aside className="widget footer-widget" role="complementary">
+                  <div className="widget widget_text">
+                      <div className="widget-content">
+                        <h2 className="widget-title subheading heading-size-3">
+                          About This Site
+                        </h2>
+                        <div className="textwidget">
+                            <p>
+                              Welcome to Cute Animal Planet! Our website features a montage of the cutest animals all across the globe!
+                            </p>
+                            <p>Here at Cute Animal Planet, we feature photos, videos, articles and various other pieces of multi-media on the cutest animals on the planet.</p>
+                            <p>Please feel free to share our website with all of your friends and family so that they too can enjoy the fun animal pictures and videos that we post every day!</p>
+                            <p> Thank you from all of us at Cute Animal Planet!</p>
+                        </div>
+                      </div>
+                    </div>
+                </aside>
+              </div>
+              <div className="col-lg-4 footer-col">
+                <div className="widget footer-widget">
+                  <h3 className="widget-title">Recent Posts</h3>
+                </div>
+              </div>
+              <div className="col-lg-3 footer-col">
+                <div className="widget footer-widget">
+                  <h3 className="widget-title">Thank you for visiting our site!</h3>
                 </div>
               </div>
             </div>
           </div>
-        </aside>
+        </div>
       </div>
     </div>
   )

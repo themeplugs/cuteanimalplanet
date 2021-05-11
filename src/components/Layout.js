@@ -4,7 +4,6 @@ import Footer from "./Footer"
 
 import FooterMenusWidgets from "./FooterMenusWidgets"
 
-import RecentPost from "./RecentPost"
 import MenuModal from "./MenuModal"
 
 const backdropClasses = " backdrop"
