@@ -1463,12 +1463,10 @@ ul.social-icons li {
 
 ul.primary-menu {
   display: flex;
-  font-size: 1.8rem;
-  font-weight: 500;
-  letter-spacing: -0.0277em;
+  font-size: 12px;
+  font-weight: 700;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: -0.8rem 0 0 -1.6rem;
+  justify-content: center;
 }
 
 .primary-menu .icon {
@@ -1504,12 +1502,14 @@ ul.primary-menu {
   font-size: inherit;
   line-height: 1.25;
   position: relative;
+  padding: 0 10px;
 }
-
-.primary-menu > li {
-  margin: 0.8rem 0 0 1.6rem;
+.primary-menu li a{
+  line-height: 70px;
+  max-height: 70px;
+  font-family: "Montserrat";
+  transition: all ease 0.5s;
 }
-
 .primary-menu > li.menu-item-has-children > a {
   padding-right: 2rem;
 }
@@ -1520,23 +1520,26 @@ ul.primary-menu {
 }
 
 .primary-menu a {
-  color: inherit;
   display: block;
   line-height: 1.2;
   text-decoration: none;
   word-break: normal;
   word-wrap: normal;
+  text-transform: uppercase;
+  color: rgba(61,61,61,.69) !important;
 }
 
 .primary-menu a:hover,
 .primary-menu a:focus,
 .primary-menu .current_page_ancestor {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #505050 !important;
 }
 
 .primary-menu li > a.current-menu-item,
 .primary-menu li.current-menu-item > .link-icon-wrapper > a {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #505050 !important;
 }
 
 .primary-menu li > a.current-menu-item:hover,
@@ -2471,7 +2474,6 @@ h2.entry-title {
 /* Featured Media ---------------------------- */
 
 .featured-media {
-  margin-top: 5rem;
   position: relative;
 }
 
@@ -4829,9 +4831,6 @@ a.to-the-top > * {
     margin-top: 3rem;
   }
  
-  .featured-media {
-    margin-top: 6rem;
-  }
 
   /* POST FOOTER */
 
@@ -5854,16 +5853,7 @@ a.to-the-top > * {
 
   /* Site Header --------------------------- */
 
-  /* PRIMARY MENU */
-
-  ul.primary-menu {
-    margin: -0.8rem 0 0 -2.5rem;
-  }
-
-  .primary-menu > li {
-    margin: 0.8rem 0 0 2.5rem;
-  }
-
+ 
   /* HEADER TOGGLES */
 
   .primary-menu-wrapper + .header-toggles {

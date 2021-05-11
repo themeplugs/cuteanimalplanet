@@ -17,7 +17,8 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
   return (
     <header id="site-header" className="header-footer-group" role="banner">
       <div className="header-section">
-            <div className="container">
+          <div className="container">
+            <div className="row">
               <div className="col-lg-12">
                 <div className="logo-section text-center">
                     <div className="d">
@@ -26,14 +27,18 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
                                 <img src={SiteLogo} alt="Cute Animal Planet" />
                             </figure>
                         </Link>
-                    </div>
+                      </div>
                   </div>
-              </div>
+                </div>
             </div>
-
-        <div className="header-navigation-wrapper">
-          <Menu />
-        </div>
+            <div className="row">
+               <div className="col-lg-12">
+                  <div className="main-menu header-navigation-wrapper">
+                    <Menu />
+                  </div>
+               </div>
+            </div>
+          </div>
       </div>
     </header>
   )
