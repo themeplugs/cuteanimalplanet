@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Header from "./Header"
 import Footer from "./Footer"
+import RecentPost from "./RecentPost"
 
 import FooterMenusWidgets from "./FooterMenusWidgets"
 
@@ -37,6 +38,9 @@ const Layout = ({ children, bodyClass }) => {
             <div className="sidebar">
               <div className="widget">
                 <h3 className="widget-title">Welcome to Cute Animal Planet!</h3>
+              </div>
+              <div className="widget">
+                <RecentPost />
               </div>
             </div>
         </div>

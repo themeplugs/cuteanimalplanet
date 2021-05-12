@@ -1559,7 +1559,7 @@ ul.primary-menu {
   opacity: 0;
   padding: 1rem 0;
   position: absolute;
-  right: 9999rem;
+  left: 0;
   top: calc(100% + 2rem);
   transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
   transform: translateY(0.6rem);

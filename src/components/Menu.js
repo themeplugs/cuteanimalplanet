@@ -19,6 +19,12 @@ const Menu = () => {
                 }
               }
             }
+            childItems {
+              nodes {
+                label
+                url
+              }
+            }
           }
         }
       }
@@ -55,7 +61,11 @@ const Menu = () => {
                 {menuItem.label}
               </UniversalLink>
              
+             <ul>
+               <li><a href="#">aaa</a></li>
+             </ul>
             </li>
+            
           )
         })}
       </ul>

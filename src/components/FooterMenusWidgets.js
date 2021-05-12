@@ -1,5 +1,6 @@
 import React from "react"
 import SocialMenu from "./SocialMenu"
+import RecentPost from "./RecentPost"
 
 const FooterMenusWidgets = ({}) => {
   return (
@@ -30,6 +31,7 @@ const FooterMenusWidgets = ({}) => {
               <div className="col-lg-4 footer-col">
                 <div className="widget footer-widget">
                   <h3 className="widget-title">Recent Posts</h3>
+                  <RecentPost />
                 </div>
               </div>
               <div className="col-lg-3 footer-col">
