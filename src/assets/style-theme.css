@@ -282,7 +282,6 @@ a.to-the-top:hover{
 .recent-post .post-content .post-title a{
   text-decoration: none;
   color: #505050;
-  opacity: 0.8;
 }
 .footer-widget .recent-post .post-content .post-title a{
   color: #fff;
@@ -290,4 +289,13 @@ a.to-the-top:hover{
 .footer-widget .recent-post .post-item{
   border-color: transparent;
   margin-bottom: 10px;
+}
+.togglebutton{
+  width: 50px;
+  height: 50px;
+  background: #fac;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
 }

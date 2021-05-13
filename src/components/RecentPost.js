@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import FeaturedMedia from "./FeaturedMedia"
 import UniversalLink from "./UniversalLink"
-import PostMeta from "./PostMeta"
 
 const RecentPost = () => {
   const data = useStaticQuery(graphql`

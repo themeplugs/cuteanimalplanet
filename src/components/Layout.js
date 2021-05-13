@@ -14,8 +14,16 @@ const Layout = ({ children, bodyClass }) => {
 
   const toggleBackdrop = (e, active) => {
     e.preventDefault()
-    setBackdropActive(active)
+    var elem = document.getElementById("primaryMenu");
+      if (elem.classList.contains("d-none")) {
+          elem.classList.remove("d-none");
+      } else {
+          elem.classList.add("d-none");
+      }
   }
+
+
+
 
   return (
     <div

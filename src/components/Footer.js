@@ -15,6 +15,7 @@ const Footer = ({}) => {
             </div>  
           <div className="fmenu">
               <FooterNav />
+
             </div>
         </div>
         

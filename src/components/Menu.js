@@ -2,7 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import UniversalLink from "./UniversalLink"
 
-const Menu = () => {
+
+const Menu = ({ isActive, toggleBackdrop }) => {
   const { wpMenu } = useStaticQuery(graphql`
     {
       wpMenu(slug: { eq: "primary" }) {
@@ -34,11 +35,8 @@ const Menu = () => {
   if (!wpMenu?.menuItems?.nodes || wpMenu.menuItems.nodes === 0) return null
 
   return (
-    <nav
-      className="primary-menu-wrapper"
-      aria-label="Horizontal"
-      role="navigation"
-    >
+    
+    <nav id="primaryMenu" className="primary-wrapper">
       <ul className="primary-menu reset-list-style">
         {wpMenu.menuItems.nodes.map((menuItem, i) => {
           const path = menuItem?.connectedNode?.node?.uri ?? menuItem.url
@@ -60,11 +58,33 @@ const Menu = () => {
               >
                 {menuItem.label}
               </UniversalLink>
+
+              {menuItem.childItems.nodes.length > 0 &&
+                <ul className="submenu">
+                    { menuItem.childItems.nodes.map((childItem, ci) => 
+                    
+                    <li key={ci}> 
+                      <UniversalLink
+                          to={childItem.url}
+                        >
+                           {childItem.label}
+                           
+                        </UniversalLink>
+                     </li>
+                    
+                    )}
+                </ul> 
+              }
             </li>
-            
           )
         })}
       </ul>
+      
+      <div className="togglebutton">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   )
 }
