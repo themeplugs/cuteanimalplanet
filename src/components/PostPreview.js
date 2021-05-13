@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import PostMeta from "./PostMeta"
 import PostCategories from "./PostCategories"
 import FeaturedMedia from "./FeaturedMedia"
+import UniversalLink from "./UniversalLink"
 
 const PostPreview = ({ post, isLast }) => {
   return (
@@ -11,7 +12,10 @@ const PostPreview = ({ post, isLast }) => {
         className={`post-${post.databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
         id={`post-${post.databaseId}`}
       >
-         <FeaturedMedia image={post.featuredImage} />
+       
+         <Link to={post.uri} >
+            <FeaturedMedia image={post.featuredImage} />
+         </Link>
 
         <header className="entry-header">
           <div className="entry-header-content">

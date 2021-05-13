@@ -231,6 +231,9 @@ a.to-the-top {
   border-radius: 4px;
   text-decoration: none;
 }
+.featured-media-inner{
+  line-height: .8;
+}
 a.to-the-top:hover{
   background: #6a79a2;
   color: #fff;
@@ -254,4 +257,37 @@ a.to-the-top:hover{
 }
 .sidebar .widget .widget-title{
   color: #0a0a0a;
+}
+.recent-post .post-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f0f0f0; 
+}
+.recent-post .post-item:last-child{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-color: transparent;
+}
+.recent-post .post-item .post-content{
+  padding-left: 20px;
+}
+.recent-post .post-item .post-content .post-title{
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 200;
+  margin: 0;
+}
+.recent-post .post-content .post-title a{
+  text-decoration: none;
+  color: #505050;
+  opacity: 0.8;
+}
+.footer-widget .recent-post .post-content .post-title a{
+  color: #fff;
+}
+.footer-widget .recent-post .post-item{
+  border-color: transparent;
+  margin-bottom: 10px;
 }

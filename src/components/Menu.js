@@ -60,10 +60,6 @@ const Menu = () => {
               >
                 {menuItem.label}
               </UniversalLink>
-             
-             <ul>
-               <li><a href="#">aaa</a></li>
-             </ul>
             </li>
             
           )

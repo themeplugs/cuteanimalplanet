@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import FeaturedMedia from "./FeaturedMedia"
 import UniversalLink from "./UniversalLink"
+import PostMeta from "./PostMeta"
 
 const RecentPost = () => {
   const data = useStaticQuery(graphql`
@@ -24,9 +25,9 @@ const RecentPost = () => {
       }
     }
   `)
-  console.log(data.allWpPost.edges)
+  
   return (
-      <div>
+      <div className="recent-post">
        { data.allWpPost.edges.map((post,index) => (
             <div key={index} className="post-item">
               <UniversalLink
@@ -36,15 +37,12 @@ const RecentPost = () => {
               </UniversalLink>
                
                <div className="post-content">
-                  <h3>
-                  <UniversalLink
-                    to={post.node.uri} 
-                  >
+                  <h3 className="post-title">
+                  <UniversalLink to={post.node.uri} >
                     {post.node.title}
                   </UniversalLink>
-                  
                   </h3>
-               </div>
+                </div>
             </div>
         ))}
       </div>
