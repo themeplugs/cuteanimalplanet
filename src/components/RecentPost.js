@@ -7,7 +7,7 @@ import PostMeta from "./PostMeta"
 const RecentPost = () => {
   const data = useStaticQuery(graphql`
     {
-      allWpPost(limit: 5) {
+      allWpPost(limit: 4) {
         edges {
           node {
             title
