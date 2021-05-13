@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import UniversalLink from "./UniversalLink"
 
 
-const Menu = ({ isActive, toggleBackdrop }) => {
+const Menu = () => {
   const { wpMenu } = useStaticQuery(graphql`
     {
       wpMenu(slug: { eq: "primary" }) {
@@ -52,6 +52,7 @@ const Menu = ({ isActive, toggleBackdrop }) => {
                 itemId
               }
             >
+
               <UniversalLink
                 to={path}
                 activeClassName={"current-menu-item current_page_item"}
@@ -82,9 +83,8 @@ const Menu = ({ isActive, toggleBackdrop }) => {
       
       <div className="togglebutton">
         <span></span>
-        <span></span>
-        <span></span>
       </div>
+     
     </nav>
   )
 }

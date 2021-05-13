@@ -1553,16 +1553,13 @@ ul.primary-menu {
 
 .primary-menu ul {
   background: #000;
-  border-radius: 0.4rem;
   color: #fff;
-  font-size: 1.7rem;
   opacity: 0;
   padding: 1rem 0;
   position: absolute;
   left: 0;
-  top: calc(100% + 2rem);
+  top: auto;
   transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
-  transform: translateY(0.6rem);
   width: 20rem;
   z-index: 1;
 }
@@ -1576,24 +1573,25 @@ ul.primary-menu {
   transition: opacity 0.15s linear, transform 0.15s linear;
 }
 
-.primary-menu ul::before,
-.primary-menu ul::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 100%;
+.primary-menu li .submenu{
+  box-shadow: rgb(0 0 0 / 15%) 0 7px 25px;
+  background: #fff;
+  padding: 13px 0;
+}
+.primary-menu li .submenu li{
+  padding: 0;
+}
+.primary-menu li .submenu li a{
+  color: #8d8d8d;
+  line-height: 24px;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: 600;
 }
 
-.primary-menu ul::before {
-  height: 2rem;
-  left: 0;
-  right: 0;
-}
-
-.primary-menu ul::after {
-  border: 0.8rem solid transparent;
-  border-bottom-color: #000;
-  right: 1.8rem;
+.primary-menu li:hover .submenu{
+  opacity: 1;
 }
 
 .primary-menu ul a {

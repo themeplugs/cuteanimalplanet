@@ -33,8 +33,7 @@ const HeaderCopy = ({ pageContext, toggleBackdrop, ...props }) => {
             </div>
             <div className="row">
                <div className="col-lg-12">
-                  <div className="main-menu header-navigation-wrapper">
-                 
+                  <div className="main-menu">
                     <Menu />
                   </div>
                </div>

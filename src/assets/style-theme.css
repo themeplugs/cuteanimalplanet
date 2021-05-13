@@ -249,6 +249,31 @@ a.to-the-top:hover{
   .fmenu{
     margin-left: -10px;
   }
+  ul.primary-menu{
+    display: block;
+  }
+  ul.primary-menu li a{
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+  }
+  .primary-menu li .submenu{
+    position: static;
+    opacity: 1;
+    width: 100%;
+    box-shadow: none;
+    background: #f7f7f7;
+    padding: 0;
+  }
+  .primary-menu li .submenu li a{
+    line-height: 50px;
+    width: auto;
+  }
+  .logo-section{
+    text-align: left;
+  }
+  .logo{
+    max-width: 40%;
+  }
 }
 @media (max-width: 767px){
   .footer-row {
@@ -290,12 +315,48 @@ a.to-the-top:hover{
   border-color: transparent;
   margin-bottom: 10px;
 }
-.togglebutton{
-  width: 50px;
-  height: 50px;
-  background: #fac;
+
+/* menu close */
+.togglebutton {
   position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
+  right: 15px;
+  top: -60px;
+  width: 32px;
+  height: 32px;
+  display: block;
+  color: #131313;
+}
+.togglebutton::after,
+.togglebutton::before,
+.togglebutton>span {
+  content: "";
+  position: absolute;
+  background: currentColor;
+  transition: all 0.2s;
+  width: 24px;
+  height: 2px;
+  left: 4px;
+}
+.togglebutton>span {
+  top: 50%;
+  margin-top: -1px;
+  width: 20px;
+}
+.togglebutton::before {
+  top: 8px;
+}
+.togglebutton::after {
+  bottom: 8px;
+}
+.active .togglebutton>span {
+  opacity: 0;
+  visibility: hidden;
+}
+.active .togglebutton::before {
+  transform: rotate(45deg);
+  top: 15px;
+}
+.active .togglebutton::after {
+  transform: rotate(-45deg);
+  bottom: 15px;
 }
