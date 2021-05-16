@@ -9,8 +9,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby WordPress Twenty Twenty`,
-    description: `Gatsby starter site for Twenty Twenty Gatsby Theme.`,
+    title: `Gatsby WordPress Cutecatsplanet`,
+    description: `Gatsby Cutecatsplanet site for Cutecatsplanet Gatsby Theme.`,
     author: `@henrikwirth`,
   },
   plugins: [
@@ -27,6 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
+        type: {
+          MediaItem: {
+            localFile: {
+              requestConcurrency: 50,
+            },
+          },
+        },
         // url: process.env.WPGRAPHQL_URL,
         url: `https://www.cuteanimalplanet.com/graphql`,
         verbose: true,
@@ -63,6 +70,7 @@ module.exports = {
         },
       },
     },
+   
     `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-react-svg",
