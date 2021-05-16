@@ -1,6 +1,8 @@
-import React from "react"
+import React, { useState }  from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import UniversalLink from "./UniversalLink"
+import { func } from "prop-types"
+
 
 
 const Menu = () => {
@@ -32,11 +34,13 @@ const Menu = () => {
     }
   `)
 
+  const [isActive, setActive] = useState(true);
+  
   if (!wpMenu?.menuItems?.nodes || wpMenu.menuItems.nodes === 0) return null
 
   return (
     
-    <nav id="primaryMenu" className="primary-wrapper">
+    <nav className={isActive ? "inactive" : "active"} >
       <ul className="primary-menu reset-list-style">
         {wpMenu.menuItems.nodes.map((menuItem, i) => {
           const path = menuItem?.connectedNode?.node?.uri ?? menuItem.url
@@ -81,7 +85,7 @@ const Menu = () => {
         })}
       </ul>
       
-      <div className="togglebutton">
+      <div className="togglebutton" onClick={() => setActive(!isActive)}>
         <span></span>
       </div>
      
