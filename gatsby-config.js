@@ -31,7 +31,7 @@ module.exports = {
         type: {
           MediaItem: {
             localFile: {
-              requestConcurrency: 50,
+              requestConcurrency: 1
             },
           },
         },
@@ -48,6 +48,34 @@ module.exports = {
         },
         html: {
           fallbackImageMaxWidth: 800,
+          useGatsbyImage: true,
+          createStaticFiles: true,
+          imageMaxWidth: 1024
+        },
+        schema: {
+          perPage: 50,
+          timeout: 900000,
+          requestConcurrency: 1,
+          previewRequestConcurrency: 1,
+        },
+        type: {
+          __all: {
+            limit: 50,
+          },
+          Menu: {
+            limit: 9999,
+          },
+          MenuItem: {
+            limit: 9999,
+          },
+          Page: {
+            limit: 999999,
+          },
+          MediaItem: {
+            localFile: {
+              requestConcurrency: 1,
+            },
+          },
         },
         // fields can be excluded globally.
         // this example is for wp-graphql-gutenberg.

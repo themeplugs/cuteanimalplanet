@@ -8,7 +8,7 @@
     "email": "shagora63@gmail.com"
   },
   "scripts": {
-    "develop": "GATSBY_CONCURRENT_DOWNLOAD=5 gatsby develop",
+    "develop": "GATSBY_CONCURRENT_DOWNLOAD=5 gatsby build",
     "clean": "gatsby clean",
     "build": "gatsby build",
     "cdev": "gatsby clean && gatsby develop",
