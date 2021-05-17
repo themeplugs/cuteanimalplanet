@@ -20,7 +20,7 @@ Last tested with the following plugin versions.
 ## WordPress Setup
 
 1. Make sure to install the two required WP plugins [wp-gatsby](https://github.com/gatsbyjs/wp-gatsby) and [wp-graphql](https://github.com/wp-graphql/wp-graphql)
-2. Best you install and activate the default WordPress Twenty Twenty theme
+2. Best you install and activate the default WordPress cuteanimalplanet theme
 3. Make sure you have Menus with the following slugs: 
    -  `primary` - Thats the top menu
    -  `extended` - That is the menu that opens on the right side as drawer
@@ -39,7 +39,6 @@ Last tested with the following plugin versions.
 
 - [gatsby-source-wordpress (v5)](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/README.md)
 - [WPGatsby - WordPress Plugin](https://github.com/gatsbyjs/wp-gatsby)
-- [Twenty Twenty - WordPress Theme](https://de.wordpress.org/themes/twentytwenty/)
 
 ## Acknowledgements
 

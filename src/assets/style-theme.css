@@ -109,7 +109,7 @@ article .entry-title{
   width: 34px;
   height: 34px;
   padding: 0;
-  line-height: 34px;
+  line-height: 28px;
   text-align: center;
   margin: 0;
   color: #fff;
@@ -377,4 +377,7 @@ a.to-the-top:hover{
 
 .s9-widget-wrapper {
   margin: 20px 0;
+}
+ul.heateor_sss_sharing_ul {
+  display: none;
 }

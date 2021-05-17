@@ -2553,8 +2553,7 @@ h2.entry-title {
 .author-bio {
   margin-top: 4rem;
   margin-right: auto;
-  margin-left: auto;
-  max-width: 58rem;
+  margin-left: 0;
   width: 100%;
 }
 
