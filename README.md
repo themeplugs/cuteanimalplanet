@@ -1,6 +1,6 @@
-# Gatsby Starter - WordPress Twenty Twenty
+# Gatsby Starter - WordPress cuteanimalplanet
 
-A port of the WordPress Twenty Twenty theme to Gatsby. 
+A port of the WordPress cuteanimalplanet theme to Gatsby. 
 
 ---
 
@@ -24,7 +24,6 @@ Last tested with the following plugin versions.
 3. Make sure you have Menus with the following slugs: 
    -  `primary` - Thats the top menu
    -  `extended` - That is the menu that opens on the right side as drawer
-   -  `social-links-menu` - For the Social menu in the footer and in the expanded drawer
       -  For the social Icons you need to adjust `SocialMenu.js`. There is a `SocialIcon` function that parses svgs depending on the Link label
 4. Rename `.env.example` file to `.env` and edit it with your domain variables.
       
