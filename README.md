@@ -26,6 +26,7 @@ Last tested with the following plugin versions.
    -  `extended` - That is the menu that opens on the right side as drawer
       -  For the social Icons you need to adjust `SocialMenu.js`. There is a `SocialIcon` function that parses svgs depending on the Link label
 4. Rename `.env.example` file to `.env` and edit it with your domain variables.
+## env file update
       
 ## Limitations
 
