@@ -5,6 +5,7 @@ import PostCategories from "./PostCategories"
 import FeaturedMedia from "./FeaturedMedia"
 import UniversalLink from "./UniversalLink"
 
+
 const PostPreview = ({ post, isLast }) => {
   return (
     <>
@@ -27,7 +28,6 @@ const PostPreview = ({ post, isLast }) => {
                 dangerouslySetInnerHTML={{ __html: post.title }}
               />
             </h2>
-
             
           </div>
         </header>

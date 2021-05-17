@@ -9,8 +9,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby WordPress Cutecatsplanet`,
-    description: `Gatsby Cutecatsplanet site for Cutecatsplanet Gatsby Theme.`,
+    title: `Gatsby WordPress cuteanimalplanet`,
+    description: `Gatsby cuteanimalplanet site for cuteanimalplanet Gatsby Theme.`,
     author: `@henrikwirth`,
   },
   plugins: [
@@ -24,6 +24,7 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    
     {
       resolve: `gatsby-source-wordpress`,
       options: {
@@ -35,7 +36,7 @@ module.exports = {
           },
         },
         // url: process.env.WPGRAPHQL_URL,
-        url: `https://www.cuteanimalplanet.com/graphql`,
+        url: `http://themeplugs.com/plugin/graphql`,
         verbose: true,
         develop: {
           hardCacheMediaFiles: false,
