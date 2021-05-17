@@ -2641,6 +2641,9 @@ h2.entry-title {
 .pagination-single a:hover .title {
   text-decoration: underline;
 }
+.pagination-wrapper.section-inner {
+  width: 100%;
+}
 
 /* -------------------------------------------------------------------------- */
 

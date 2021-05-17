@@ -375,23 +375,6 @@ a.to-the-top:hover{
   margin-bottom: 10px;
 }
 
-.social-share {
-  display: flex;
-  align-items: center;
+.s9-widget-wrapper {
   margin: 20px 0;
-}
-
-.social-share a {
-  background: #3c589a;
-  display: inline-block;
-  padding: 20px;
-  margin-right: 5px;
-  color: #fff;
-  width: 30px;
-  padding: 6px 15px;
-  height: 30px;
-}
-.social-share svg,
-.social-share path{
-  fill: #fff;
 }

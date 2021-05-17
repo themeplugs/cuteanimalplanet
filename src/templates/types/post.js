@@ -8,7 +8,6 @@ import AuthorBio from "../../components/AuthorBio"
 import PostMeta from "../../components/PostMeta"
 import PostCategories from "../../components/PostCategories"
 import FeaturedMedia from "../../components/FeaturedMedia"
-import SocialShare from "../../components/SocialShare"
 
 const post = ({ data }) => {
   const { nextPage, previousPage, page } = data
@@ -46,7 +45,7 @@ const post = ({ data }) => {
               dangerouslySetInnerHTML={{ __html: title }}
             />
              <PostMeta title={title} author={author} date={date} />
-             <SocialShare />
+             <div class="s9-widget-wrapper"></div>
             <div
               className="intro-text section-inner max-percentage small"
               dangerouslySetInnerHTML={{ __html: excerpt }}
@@ -65,7 +64,7 @@ const post = ({ data }) => {
         
         <div className="section-inner">
           <AuthorBio author={author} />
-          <SocialShare />
+          <div class="s9-widget-wrapper"></div>
           <ContentTypePagination
             previousPage={previousPage}
             nextPage={nextPage}
