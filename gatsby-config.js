@@ -107,6 +107,7 @@ module.exports = {
         defer: true
       }
     },
+
    
     `gatsby-transformer-sharp`,
     {

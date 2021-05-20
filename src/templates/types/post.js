@@ -45,7 +45,7 @@ const post = ({ data }) => {
               dangerouslySetInnerHTML={{ __html: title }}
             />
              <PostMeta title={title} author={author} date={date} />
-             <div class="sharethis-inline-share-buttons"></div>
+             <div class="s9-widget-wrapper"></div>
             <div
               className="intro-text section-inner max-percentage small"
               dangerouslySetInnerHTML={{ __html: excerpt }}
@@ -64,7 +64,7 @@ const post = ({ data }) => {
         
         <div className="section-inner">
           <AuthorBio author={author} />
-          <div class="sharethis-inline-share-buttons"></div>
+          <div class="s9-widget-wrapper"></div>
           <ContentTypePagination
             previousPage={previousPage}
             nextPage={nextPage}
