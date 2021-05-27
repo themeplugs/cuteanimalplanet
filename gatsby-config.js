@@ -100,10 +100,12 @@ module.exports = {
       },
     },
     {
-      resolve: `@awolf81/gatsby-theme-addthis`, 
+      resolve: "gatsby-plugin-social9-socialshare",
       options: {
-        publicId: process.env.ADDTHIS_PUBLIC_ID
-      } 
+        content:  "f03c29e9abd146f1885badf34342bbd9",
+        async: true,
+        defer: true
+      }
     },
    
     `gatsby-transformer-sharp`,

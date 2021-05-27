@@ -11,7 +11,6 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="title" contant="site title" />
 
         {props.headComponents}
       </head>
@@ -23,6 +22,7 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+       
       </body>
     </html>
   )

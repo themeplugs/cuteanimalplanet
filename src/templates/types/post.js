@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import Comments from "../../components/Comments"
@@ -9,6 +8,7 @@ import AuthorBio from "../../components/AuthorBio"
 import PostMeta from "../../components/PostMeta"
 import PostCategories from "../../components/PostCategories"
 import FeaturedMedia from "../../components/FeaturedMedia"
+import { Helmet } from "react-helmet"
 
 const post = ({ data }) => {
   const { nextPage, previousPage, page } = data
@@ -21,35 +21,52 @@ const post = ({ data }) => {
     databaseId,
     author,
     date,
-  } = page
+    uri
+  } = page  
+  let clearExerpt = excerpt.replace(/<\/?[^>]+(>|$)/g, "");
+  if(clearExerpt.length > 10) {
+    clearExerpt = clearExerpt.substring(0,80)
+  }
+  let clearTitle = title.replace(/<\/?[^>]+(>|$)/g, "");
+  if(clearExerpt.length > 10) {
+    clearTitle = clearTitle.substring(0,30)
+  }
+  let makeTitleArr = clearTitle.split(" ");
+  let addTitleSuffix = [...makeTitleArr, "..."];
+
+
+  let makeExerptArr = clearExerpt.split(" ");
+  let addExerptSuffix = [...makeExerptArr, "..."];
 
   return (
     <Layout
-      bodyClass={`post-template-default single single-post postid-${databaseId} single-format-standard wp-embed-responsive singular has-post-thumbnail has-single-pagination showing-comments footer-top-visible customize-support`}
+    bodyClass={`post-template-default single single-post postid-${databaseId} single-format-standard wp-embed-responsive singular has-post-thumbnail has-single-pagination showing-comments footer-top-visible customize-support`}
     >
-      <Seo title={title} description={excerpt} />
+     
+    <Seo title={title} />
 
       <article
         className={`post-${databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
         id={`post-${databaseId}`}
       >
+      
+
         <FeaturedMedia image={featuredImage} />
         
-        <Helmet>
-          <title>{title}</title>
-          <description>{excerpt}</description>
-        </Helmet>
-      
         <header className="entry-header header-footer-group">
           <div className="entry-header-content">
+
             <PostCategories categories={categories} />
+
             <h1
               className="entry-title"
               dangerouslySetInnerHTML={{ __html: title }}
             />
              <PostMeta title={title} author={author} date={date} />
-             <div class="s9-widget-wrapper"></div>
-            <div
+             
+                <div className="s9-widget-wrapper"></div>
+
+             <div
               className="intro-text section-inner max-percentage small"
               dangerouslySetInnerHTML={{ __html: excerpt }}
             />
@@ -67,7 +84,7 @@ const post = ({ data }) => {
         
         <div className="section-inner">
           <AuthorBio author={author} />
-          <div class="s9-widget-wrapper"></div>
+          <div className="s9-widget-wrapper"></div>
           <ContentTypePagination
             previousPage={previousPage}
             nextPage={nextPage}
